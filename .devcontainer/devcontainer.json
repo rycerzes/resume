@@ -30,8 +30,8 @@
                 "files.associations": {
                     "*.tex": "latex"
                 },
-                "latex-workshop.latexindent.path": "latexindent",
-                "latex-workshop.latexindent.args": [
+                "latex-workshop.formatting.latexindent.path": "latexindent",
+                "latex-workshop.formatting.latexindent.args": [
                     "-c",
                     "%DIR%/",
                     "%TMPFILE%",

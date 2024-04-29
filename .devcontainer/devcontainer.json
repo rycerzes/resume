@@ -12,6 +12,7 @@
     "postCreateCommand": "",
     "customizations": {
         "vscode": {
+            "terminal.integrated.defaultProfile.linux": "bash",
             "extensions": [
                 "james-yu.latex-workshop",
                 // Git

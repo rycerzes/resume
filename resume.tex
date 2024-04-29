@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Swapnil Dutta
+% License : Unlicense
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Swapnil Dutta} \\ \vspace{1pt}
+    \small +91 77798 33225 $|$ \href{mailto:swapsnil12@gmail.com}{\underline{swapsnil12@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/swapnildutta1}{\underline{LinkedIn}} $|$
+    \href{https://github.com/rycerzes}{\underline{GitHub}} $|$
+    \href{https://rycerzes.github.io/}{\underline{Portfolio}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {KIIT University}{Bhubaneswar, India}
+      {B.Tech. in Computer Science and Engineering}{Sep 2022 -- Present}
+    \resumeSubheading
+      {Narbheram Hansraj English School}{Jamshedpur, India}
+      {High School Diploma}{Mar 2020 -- Aug 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Newton School}{Bangalore, India (Remote Intern)}
+      {Bot Developer}{Jan 2023 -- Nov 2023}
+      \resumeItemListStart
+        \resumeItem{In the capacity of a Discord bot developer and server manager, my expertise in programming, specifically within the context of Discord’s API, was leveraged to design and optimize custom bots tailored to the specific needs of the server community.}
+        \resumeItem{This encompassed not only the coding of functionalities and features but also the assurance of seamless integration and efficient performance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fampay}{Bangalore, India (Remote Intern)}
+      {Bot Maintainer}{May 2022 -- Jan 2023}
+      \resumeItemListStart
+        \resumeItem{As a bot maintainer, I was responsible for the management of various roles in discord. My role included utilizing containerization software to maintain the uptime of the bot.}
+        \resumeItem{I also assisted in the migration of the bot from discord.js v11.0 to v12.0.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/rycerzes/LunarLander-DQN}{LunarLander-DQN}} $|$ \emph{Python, Deep Q-Network}}{Ongoing}
+          \resumeItemListStart
+            \resumeItem{LunarLander-DQN is a Python project that implements a Deep Q-Network (DQN) algorithm with extension for training an agent to land a lunar lander spacecraft.}
+            \resumeItem{Work in progress for implementing all extensions of DQN to create a Rainbow DQN model, based on Rainbow: Combining Improvements in Deep Reinforcement Learning.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/rycerzes/Mario-RL}{Mario-RL}} $|$ \emph{Reinforcement Learning, NES-py}}{}
+          \resumeItemListStart
+            \resumeItem{Led a team which developed a Reinforcement Learning based AI Agent for playing Super Mario Bros on an NES emulator (NES-py).}
+            \resumeItem{Implemented Double Deep Q Networks for reducing the overestimation bias and the variance of the Q-learning update, and thus improving the stability and performance of the algorithm.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/rycerzes/nextform}{nextform}} $|$ \emph{AWS, Next.js, DynamoDB}}{}
+          \resumeItemListStart
+            \resumeItem{A serverless app running in AWS to send automated confirmation messages upon registering through contact forms. Uses the Next.js router and Amplify Framework for AWS integration.}
+            \resumeItem{Added CORS, Zod Typesafe Form Validation, Support for REST API, DynamoDB (NoSQL), Lambda functions.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/afterdie/octops}{Octops}} $|$ \emph{Python, Nuitka}}{}
+          \resumeItemListStart
+            \resumeItem{A Python project in which you can play a point and click game. This was developed as an introduction to Hacktoberfest 2023. The main motive was to guide the students to Hacktoberfest, Git and Github.}
+            \resumeItem{Aside from basic gameplay, the project was compiled in Nuitka, to prevent reverse engineering. The game was built both for Windows and Linux platforms.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Zeta} $|$ \emph{Discord API}}{}
+          \resumeItemListStart
+            \resumeItem{Open sourced the development of the discord bot which was used for the company, Fampay. Handled the migration.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, JavaScript, MATLAB, Bash, SQL} \\
+     \textbf{Frameworks/Libraries}{: Scikit-learn, Matplotlib, Pandas, Gymnasium, SB3, Pytorch, Next.js, Express.js} \\
+     \textbf{Tools}{: Git, Linux, Docker, AWS (DynamoDB, S3, EC2), CI/CD}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

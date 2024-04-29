@@ -1,0 +1,4 @@
+# Suppress common harmless warnings for resume
+-Warn1  # Command terminated with space
+-Warn8  # Wrong length of dash (we use proper dashes now)
+-Warn13 # Intersentence spacing (we handle this appropriately)

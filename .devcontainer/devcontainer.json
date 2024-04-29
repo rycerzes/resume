@@ -1,8 +1,12 @@
 {
     "name": "project-dev",
-    "dockerComposeFile": ["docker-compose.yml"],
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
     "service": "vscode",
-    "runServices": ["vscode"],
+    "runServices": [
+        "vscode"
+    ],
     "shutdownAction": "stopCompose",
     "workspaceFolder": "/workspace",
     "postCreateCommand": "",
@@ -11,12 +15,16 @@
             "extensions": [
                 "james-yu.latex-workshop",
                 // Git
-                "eamodio.gitlens",
-                // Other helpers
                 "shardulm94.trailing-spaces",
                 "stkb.rewrap", // rewrap comments after n characters on one line
                 // Other
-                "vscode-icons-team.vscode-icons"
+                "bierner.github-markdown-preview",
+                "yzhang.markdown-all-in-one",
+                "bierner.markdown-checkbox",
+                "GitHub.copilot-chat",
+                "bierner.markdown-footnotes",
+                "bierner.markdown-preview-github-styles",
+                "bierner.markdown-mermaid"
             ],
             "settings": {
                 // General settings

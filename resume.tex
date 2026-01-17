@@ -107,92 +107,93 @@
 %----------HEADING----------
 
 \begin{center}
-    \textbf{\Huge \scshape Swapnil Dutta} \\ \vspace{1pt}
-    \href{mailto:swapnil@rycerz.es}{\underline{swapnil@rycerz.es}} $|$ 
-    \href{https://linkedin.com/in/swapnildutta1}{\underline{LinkedIn}} $|$
-    \href{https://github.com/rycerzes}{\underline{GitHub}}
+  \textbf{\Huge \scshape Swapnil Dutta} \\ \vspace{1pt}
+  \href{mailto:swapnil@rycerz.es}{swapnil@rycerz.es} $|$
+  \href{https://linkedin.com/in/swapnildutta1}{LinkedIn} $|$
+  \href{https://github.com/rycerzes}{GitHub}
 \end{center}
 
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Anonymous Digital Marketing Pvt Ltd.}{Kolkata, India}
-      {Full Stack Engineer}{Jun 2024 -- Aug 2024}
-      \resumeItemListStart
-        \resumeItem{Engineered a robust web application for employee management and fraud prevention that decreased employee fraud while enhancing onboarding efficiency across more than 50 businesses in the F\&B sector.}
-        \resumeItem{Architected and maintained a scalable cloud infrastructure on AWS (EC2, S3, Lambda, SES) that facilitated seamless integration with Docker and GitHub CI/CD tools, significantly reducing deployment times.}
-      \resumeItemListEnd
+\resumeSubheading
+{Siemens}{Bengaluru, India}
+{Research Engineer Intern}{Oct 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Built a data analysis toolkit for electronic component datasets (18k+ rows) with semantic search, keyword search, and hybrid retrieval capabilities. Designed a chat interface with context-aware responses using DuckDB and LLM/embedding models.}
+\resumeItem{Evaluating 6D Object Pose Estimation models (SAM-6D, FoundationPose, GigaPose) for robotic manipulation applications in ROS2 Humble simulations.}
+\resumeItem{Exploring Vision-Language-Action (VLA) model architectures for integrating language-based task planning with robotic control in ROS2 environments.}
+\resumeItemListEnd
 
-    \resumeSubheading
-      {ADRDE, DRDO (Research \& Development)}{Agra, India}
-      {Machine Learning Intern}{May 2024 -- Jul 2024}
-      \resumeItemListStart
-        \resumeItem{Aggregated and analyzed 50TB of 4-dimensional weather data from ECMWF ERA5, MERRA-2, and NCAR using Xarray and Dask, resulting in the identification of over 20 significant weather patterns through dynamic visualizations crafted with Seaborn and Matplotlib.}
-        \resumeItem{Applied chunking optimization, CF convention standardization, and multi-variable scaling techniques to convert datasets into Analysis Ready Cloud Optimized (ARCO) ZARR format, achieving optimal spatial-temporal chunking patterns for optimal data retrieval.}
-      \resumeItemListEnd
+\resumeSubheading
+{Puch AI}{Remote}
+{AI Engineering Intern}{Sep 2025 -- Oct 2025}
+\resumeItemListStart
+\resumeItem{Architected an asynchronous OpenAI wrapper for a WhatsApp chatbot, implementing a robust tool-calling framework supporting 30+ integrated tools with intelligent fallback mechanisms.}
+\resumeItem{Engineered a full observability suite using Sentry (error tracking), Langfuse (LLM traces), and PostHog (feature flags) to monitor conversation state and agent performance in real-time.}
+\resumeItem{Built automated test suites for async workflows to ensure reliability across multi-step agent conversations.}
+\resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+\resumeSubheading
+{Cosdata}{Remote}
+{Software Engineering Intern (Rust/Vector Search)}{May 2025 -- Sep 2025}
+\resumeItemListStart
+\resumeItem{Extended a Vector Database engine by implementing Hybrid Search (Dense + Sparse) and batch processing endpoints in Rust (Actix Web), significantly improving retrieval flexibility.}
+\resumeItem{Benchmarked retrieval performance using BEIR datasets against SOTA algorithms (DiskANN, HNSW), tracking QPS and CPU latency to guide core engine optimizations.}
+\resumeItem{Implemented memory-efficient chunked streaming (200k vectors/chunk) and remote embedding caching (vLLM), reducing indexing overhead and latency.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------
-\section{Project Experience}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-          {\href{http://github.com/3xCaffeine/mcp-server}{VaultAssist MCP Server}}{Aug 2025}
-          \resumeItemListStart
-            \resumeItem{Built a secure, vault-grade MCP server in TypeScript that exposes 50+ Google Workspace tools (Gmail, Drive, Calendar, Docs, Sheets, Slides, Tasks) through OAuth 2.1, sequential thinking, and graph-database-backed memory, enabling natural-language automation and cross-service context management for personal AI assistants.}
-          \resumeItemListEnd
+%-----------PROJECTS & OPEN SOURCE-----------
+\section{Projects \& Open Source}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/meta-pytorch/openenv}{\textbf{Meta-PyTorch/OpenEnv}} $|$ \emph{Open Source Contributor}}{Dec 2025}
+\resumeItemListStart
+\resumeItem{Authored and implemented architectural enhancements for concurrent environments, solving bottlenecks in RL training by designing multi-session support within single Docker containers.}
+\resumeItem{Standardized environment directory structures and dependency management using \texttt{uv} and \texttt{pyproject.toml}, streamlining CI/CD workflows for the open-source community.}
+\resumeItem{Migrated data models to Pydantic and added parameterized environment operations, improving validation, error handling, and API flexibility.}
+\resumeItemListEnd
 
-        \resumeProjectHeading
-          {\href{https://github.com/rycerzes/agent-memory}{Agent Memory System}}{Jul 2025}
-          \resumeItemListStart
-            \resumeItem{Designed a hybrid memory framework inspired by mem0 \& langgraph that combines vector search (ChromaDB) and graph relations (Neo4j) to store, retrieve, and manage semantic, episodic, and procedural memories for AI agents, enabling parallel queries and intelligent memory lifecycle management via LLM inference.}
-          \resumeItemListEnd
-      
-        \resumeProjectHeading
-          {\href{https://github.com/rycerzes/adk-agent-tutor}{ADK Agent Tutor}}{May 2025 -- Jun 2025}
-          \resumeItemListStart
-            \resumeItem{Developed an AI tutoring multi-agent system using Google’s Agent Development Kit (ADK) that orchestrates subject-specific sub-agents (Math, Physics) driven by Gemini for interactive student engagement, resulting in improved learning outcomes through personalized AI-driven instruction. The sub-agents had access to their own specific set of tools and also had few-shot learning prompts for enhanced output generation.}
-          \resumeItemListEnd
-      
-        \resumeProjectHeading
-          {\href{https://github.com/rycerzes/tagging-engine}{Fashion Tagging Engine}}{May 2025 -- Jun 2025}
-          \resumeItemListStart
-            \resumeItem{Engineered a computer vision-based fashion tagging engine that analyzes video and image content to identify fashion items and find similar products from catalogs, leveraging DINO (object-detection) and Fashion-CLIP (embedding generation) which resulted in accurate product recommendations.}
-          \resumeItemListEnd
-          
-    \resumeSubHeadingListEnd
+\resumeProjectHeading
+{\href{http://github.com/3xCaffeine/mcp-server}{VaultAssist MCP Server} $|$ \emph{MCP, OAuth 2.1, Google APIs}}{Aug 2025}
+\resumeItemListStart
+\resumeItem{Built a secure Model Context Protocol (MCP) server exposing 50+ Google Workspace tools through OAuth 2.1, utilizing graph-database-backed memory for cross-service context management in personal AI assistants.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://github.com/rycerzes/agent-memory}{Agent Memory System} $|$ \emph{Neo4j, ChromaDB}}{Jul 2025}
+\resumeItemListStart
+\resumeItem{Designed a hybrid memory framework combining vector search (ChromaDB) and knowledge graphs (Neo4j) to manage semantic and episodic memories, enabling AI agents to retain long-term context.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {KIIT University}{Bhubaneswar, India}
-      {B. Tech. in Computer Science and Engineering}{Graduation Date: Jun 2026}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{KIIT University}{Bhubaneswar, India}
+{B. Tech. in Computer Science and Engineering}{Graduation Date: Jun 2026}
+\resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, TypeScript, Go, SQL, C, Bash, Rust} \\
-     \textbf{Libraries}{: FastAPI, Flask, Streamlit, Pandas, Xarray, Dask, PyTorch, Transformers, LangChain, LlamaIndex, Next.js, Hono, React, TailwindCSS} \\
-     \textbf{Cloud \& DevOps}{: AWS (EC2, S3, Lambda, RDS), Docker, DigitalOcean, Azure, Prometheus, Grafana, Git, GitHub Actions} \\
-     \textbf{Data \& ML}{: PostgreSQL, MongoDB, Neo4j, ChromaDB, Qdrant, Weaviate, FAISS, OpenCV, Redis/Valkey, Scikit-learn, Seaborn, Matplotlib}
-    }}
- \end{itemize}
-
-%-----------CERTIFICATES-----------
-\section{Certificates}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Oracle Cloud Infrastructure 2024 Certified AI Foundations Associate}}{}
-    \resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Languages}{: Python, Rust, Typescript, Go, SQL, C++, Bash} \\
+        \textbf{AI \& Robotics}{: PyTorch, ROS 2 Humble, Hugging Face Diffusers, LangChain, LlamaIndex, vLLM} \\
+        \textbf{Systems \& Cloud}{: AWS, Docker/Podman, Prometheus, Grafana, GitHub Actions, Sentry, PostHog} \\
+        \textbf{Data \& Search}{: PostgreSQL, Neo4j, ChromaDB, Qdrant, DiskANN, HNSW, Xarray, Dask} \\
+        \textbf{Tools}{: Nix, uv, pixi, Actix Web, FastAPI, Next.js}
+        }}
+\end{itemize}
 
 %-------------------------------------------
 \end{document}
